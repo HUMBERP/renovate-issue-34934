@@ -1,17 +1,13 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 34934
 
 ## Current behavior
 
-Explain the current behavior here.
+Using the renovate cli command `npx renovate --azure-work-item-id=25608 --dry-run=full` renovate did not update FluentAssertions to version 7.2.0 because it reports "SkipReason": "invalid-version".
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Renovate should handle the package range and update FluentAssertions to version 7.2.0 instead of skipping the package.
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+[discussion 34934](https://github.com/renovatebot/renovate/discussions/34934)
