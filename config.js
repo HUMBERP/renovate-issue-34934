@@ -1,7 +1,5 @@
 module.exports = {
-   platform: process.env.RENOVATE_PLATFORM,
-   endpoint: process.env.RENOVATE_ENDPOINT,
-   token: process.env.RENOVATE_TOKEN,
+   platform: 'github',
    autoApprove: true,
    automerge: true,
    automergeType: 'pr',
@@ -61,13 +59,8 @@ module.exports = {
       'enabled': false
    },
    hostRules: [
-      {
-         hostName: 'pkgs.dev.azure.com',
-         username: 'renovate',
-         password: process.env.RENOVATE_TOKEN
-      }
    ],
    repositories: [
-      'Reporting/Ecockpit.ShiftEvents'
+      'HUMBERP/renovate-issue-34934'
    ]
 };
